@@ -254,7 +254,7 @@ html, body {
 .homeAbout .topicItem > span {
     position: relative;
     display: inline-block;
-    padding: 30px;
+    padding: 1.56vw;;
     background-image: url(../img/home/six.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
