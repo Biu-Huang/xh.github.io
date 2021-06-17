@@ -3,9 +3,44 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding:0;
 }
 
+div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+div {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 html, body {
-    min-width: 1000px;
+    color: #333;
+    min-width: 1200px;
     overflow-x: hidden;
+}
+
+.primaryColor {
+    color: #5CB384;
+}
+
+.textIndent {
+    text-indent: 2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+input, textarea {
+    outline-color: none;
+	outline-style: none;
+	outline-width: 0px;
+	text-shadow: none;
+	-webkit-appearance: none;
+	-webkit-user-select: text;
+	outline-color: transparent ;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .header {
@@ -21,13 +56,13 @@ html, body {
             align-items: center;
     position: fixed;
     width: 100%;
-    height: 110px;
+    height: 76px;
     top: 0;
     left: 0;
     background-color: #fff;
     -webkit-box-shadow: 0 5px 5px rgba(26, 61, 81, .3);
             box-shadow: 0 5px 5px rgba(26, 61, 81, .3);
-    z-index: 1;
+    z-index: 100;
 }
 
 .header .logo {
@@ -37,39 +72,59 @@ html, body {
 }
 
 .header .headerNav {
-    -webkit-box-flex: 1;
+    /* -webkit-box-flex: 1;
     -webkit-flex: 1;
        -moz-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
-    color: #333;
+            flex: 1; */
+    
     font-size: 20px;
     line-height: 30px;
     text-align: right;
-    margin-right: 21.77vw;
+    margin-left: 18vw;
     white-space: nowrap;
 }
 
-.headerNav span {
+.headerNav a {
+    color: #333;
     cursor: pointer;
     margin-right: 3.125vw;
+    text-decoration: none;
 }
 
-.headerNav span.active {
+.headerNav a:active, .headerNav a:visited, .headerNav a:link {
+    color: #333;
+}
+
+.headerNav a.active {
     font-weight: bold;
     color: #5CB384;
 }
 
-.headerNav span:last-child {
+.headerNav a:last-child {
     margin-right: 0;
 }
 
 .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     color: #fff;
     background-color: #5CB384;
     text-align: center;
@@ -78,13 +133,13 @@ html, body {
 
 
 .footer .logo {
-    width: 8.33vw;
-    height: 8.33vw;
+    width: 160px;
+    height: 160px;
 }
 
 .footer .qcode {
-    width: 10.41vw;
-    height: 10.41vw;
+    width: 200px;
+    height: 200px;
 }
 
 .footer .detailInfo {
@@ -106,239 +161,88 @@ html, body {
     margin-bottom: 0;
 }
 
-.hand {
-    width: 100%;
-    height: 900px;
-    background-image: url('../img/home/hand.png');
-    background-repeat: no-repeat;
-    -o-background-size: 100% 100%;
-       background-size: 100% 100%;
-    margin-top: 110px;
+.mgBottom {
+    margin-bottom: 40px;
 }
 
-.advance {
-    width: 100%;
+.textCenter {
     text-align: center;
 }
 
-.advance .rect4 {
-    margin-top: 120px;
-    margin-bottom: 90px;
-}
-
-.advance .advanceInfo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 62.5vw;
-    height: 686px;
-    margin: 0 auto 120px;
-    background-image: url('../img//home/bgroom.png');
-}
-
-.advance .advanceInfo .infoItem {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-       -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-}
-
-.advance .advanceInfo .infoItem .title {
-    width: 6.77vw;
-    height: 6.77vw;
-    line-height: 6.77vw;
-    margin: 90px auto 50px;
-    color: #fff;
-    font-size: 2.083vw;
-    border: 1px solid #fff;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 50%;
-}
-
-.advance .advanceInfo .infoItem:hover {
-    background-color: #5CB384;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-}
-
-.advance .advanceInfo .infoItem:hover .infoDetail {
-    display: block;
-}
-
-.infoDetail {
-    max-height: 300px;
-    overflow-y: auto;
-    display: none;
-    color: #fff;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 1.354vw;
-}
-
-.advance .advanceInfo .infoItem .info1 {
-    font-size: 1.77vw;
-    margin-bottom: 31px;
-}
-
-.advance .advanceInfo .infoItem .info2 {
-    font-size: 1.25vw;
-    margin-bottom: 53px;
-}
-
-.advance .advanceInfo .infoItem .info3 {
-    font-size: 1.04vw;
-}
-
-.homeAbout {
-    width: 100vw;
-    height: 100%;
-    min-height: 600px;
-    background-image: url('../img/home/tree.png');
-    background-repeat: no-repeat;
-    -o-background-size: 100% 100%;
-       background-size: 100% 100%;
-    text-align: center;
-}
-
-.homeAbout .aboutImg {
-    padding-top: 46px;
-    text-align: center;
-}
-
-.homeAbout .cpu {
-    position: relative;
-    width: 43.125vw;
-    top: 8.125vh;
-    vertical-align: top;
-}
-
-.homeAbout .topic {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-top: 3.8vh;
-    color: #fff;
-    font-size: 2.08vw;
-    padding-right: 7vw;
-    vertical-align: top;
-}
-
-.homeAbout .btn {
-    color: #fff;
-    width: 100%;
+.textRight {
     text-align: right;
-    cursor: pointer;
 }
 
-.homeAbout .btn > a {
-    font-size: 1.25vw;
+.color333 {
+    color: #333 !important;
+}
+
+.red {
+    color: #f00;
+}
+
+.bread {
+    width: 1200px;
+    font-size: 18px;
+    color: #999;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin: 120px auto 60px;
+}
+
+.ptips {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.ptips .mainTip {
+    width: 1200px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto 4px;
+}
+
+.ptips .mainTip span {
+    position: relative;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.ptips .mainTip .line {
+    position: relative;
+    top: -18px;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;   
+}
+
+.ptips .subTip {
+    font-size: 22px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.prenext {
+    width: 1200px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px 68px;
     background-color: #5CB384;
-    padding: 3px 20px;
-    border-radius: 2px;
+    font-size: 22px;
+    margin: 63px auto 0;
     color: #fff;
 }
 
-.homeAbout .topicItem {
-    margin-top: 3.64vh;
+.prenext .row:first-child {
+    margin-bottom: 10px;
 }
 
-.homeAbout .topicItem > span {
-    position: relative;
-    display: inline-block;
-    padding: 1.56vw;;
-    background-image: url(../img/home/six.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.homeAbout .topicItem > span:first-child {
-    margin-right: 30px;
-}
-
-.homeDynamic {
-    margin: 120px 0 120px;
-}
-
-.homeDynamic .dynamicImg {
-    text-align: center;
-}
-
-.dynamicInfo {
-    margin-top: 115px;
-    text-align: center;
-}
-
-.dynamicInfo .dynamicImg {
-    width: 24.17vw;
-    margin-right: 6.72vw;
-    vertical-align: top;
-}
-
-.dylist {
-    display: inline-block;
-    max-height: 400px;
-    overflow-y: auto;
-    vertical-align: top;
-}
-
-.dylist .dyitem {
-    margin-bottom: 50px;
-}
-
-.dylist .dyitem:last-child {
-    margin-bottom: 0;
-}
-
-.homeco {
-    position: relative;
-    text-align: center;
-}
-
-.homeco .coimg {
-    width: 100%;
-    margin: 94px auto;
-}
-
-.homeco .contact {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    font-size: 0;
-    width: 100%;
-}
-
-.homeco .contact > div {
-    position: absolute;
-    text-align: left;
-    font-size: 2.4vw;
-    font-weight: bold;
-}
-
-.homeco .tel1 {
-    right: calc(50% + 75px);
-    bottom: 287px;
-}
-
-.homeco .tel2 {
-    left: calc(50% + 75px);
-    bottom: 295px;
-}
-
-.homeco .tel2 > div:last-child {
-    font-size: 1.875vw;
-    font-weight: normal;
-}
-
-.homeco .tel3 {
-    right: calc(50% + 75px);
-    bottom: 104px;
+.prenext .row > span:first-child {
+    color: #ccc;
 }

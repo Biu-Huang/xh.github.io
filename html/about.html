@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html"><img src="../img/home/logo.png" alt="星护健康" class="logo" /></a>
+        <div class="headerNav">
+            <a href="../index.html">首页</a>
+            <a href="./product.html">产品中心</a>
+            <a href="#" class="active">关于我们</a>
+            <a href="./dynamic.html">星护动态</a>
+        </div>
+    </div>
+    <div class="abcover"></div>
+
+    <div class="aboutContent">
+        <div class="btns">
+            <span class="active" onclick="changebg(this)">星护简介</span>
+            <span onclick="changebg(this)">荣誉资质</span>
+            <span onclick="changebg(this)">企业风采</span>
+        </div>
+        <div class="line"></div>
+        <div class="title">
+            <span class="text">星护简介</span>
+            <div class="textline"></div>
+        </div>
+        <div class="desc">
+            <div class="textIndent">上海星护健康科技有限公司是一家专注于新能源充电桩核心技术研发和生产制造的高科技企业，集研发、制造、销售、服务于一体，是国内新能源充电领域首屈一指的智能充电系列一站式服务商。</div>
+            <div class="textIndent">协行新能源始终秉承着“智慧充电，绿色出行”的原则，积极助力城市新能源公共充电配套设施的建设，将充电桩项目成功运用于汽车产业、地产产业、城市公共交通、旅游景区、商业中心、物流中心等区域，并为客户提供专业的充电桩的现场考察、项目规划、施工建设及充电桩建成后的售后管理等服务项目。</div>
+            <div class="textIndent">
+                公司现拥有制造、营销、工程、客服系统及核心技术团队共200多名，其中教授级高工和高级工程师等高级技术人才80余人；拥有先进的生产设备、一流的制造工艺以及先进的产品检试验中心及完善的检测手段，在生产经营过程中严格执行国际及相关行业标准，通过了ISO9000质量体系、ISO14001环境体系认证，拥有CCC、CECBULKAMASMEKO等认证资质。
+            </div>
+            <div class="textIndent">抓住机遇，展望未来！协行新能源始终坚持自主创新、产学研结合，并能及时把握行业发展新机遇，积极结合产业联盟合作等技术创新多元化机制，不断加大研发投入，拓展新能源和节能减排等新兴产业领域，以国际化的眼光，迎接挑战，致力于成为世界级的新能源智慧充电服务商。</div>
+        </div>
+        <div class="title">
+            <span class="text">服务理念</span>
+            <div class="textline"></div>
+        </div>
+        <div class="goal">
+            <div>
+                <span class="bold">水聚强势：</span>
+                以柔性服务汇聚滴水之力形成刚性能量，凭借先进的技术、客户的信任与支持形成强大的势能，创造出行业内知名品牌，引领行业发展。
+            </div>
+            <div>
+                <span class="bold">水利万物：</span>
+                以泽被万物、不争名利的品行奉献社会，以不断满足客户需求，满足人民群众“低碳出行”的愿望为己任，实现合作共赢，履行社会责任。
+            </div>
+            <div>
+                <span class="bold">水滴石穿：</span>
+                以客户为中心，认准目标、持之以恒，通过真诚服务感动客户，以水滴石穿的坚韧品质，在市场开拓的道路上孜孜以求。
+            </div>
+            <div>
+                <span class="bold">臻于至善：</span>
+                随着科技的发展，客户的需求也不断在变化，这就需要我们不断探索才能跟上科技发展的脚步，达到新境界，实现企业使命和愿景的过程，就是追求卓越的过程。
+            </div>
+        </div>
+    </div>
+
+    <div class="ptips">
+        <div class="mainTip">
+            <span>星护健康 • 智能陪护新选择</span>
+            <div class="line"></div>
+        </div>
+        <div class="subTip">方寸之间 • 爱芯陪护</div>
+    </div>
+    <div class="footer">
+        <div>
+            <img class="logo" src="../img/home/flogo.png" alt="logo" />
+        </div>
+        <div class="detailInfo">
+            <div>联系电话：123456789</div>
+            <div>网站：www.xinghujk.com</div>
+            <div>地址：上海市闵行区申昆路1899号宇培国际8栋617</div>
+            <div>上海星护健康科技有限公司 版权所有</div>
+            <div>备案号：泸ICP备2021011766号</div>
+        </div>
+        <div>
+            <img class="qcode" src="../img/home/qcode.png" alt="二维码" />
+        </div>
+    </div>
+</body>
+<script>
+    let spans = document.querySelectorAll('.aboutContent .btns span')
+    function changebg(e) {
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].classList.remove('active');
+        }
+        e.classList.add('active');
+    }
+</script>
+</html>

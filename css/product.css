@@ -1,0 +1,131 @@
+.pcover {
+    width: 100%;
+    height: 900px;
+    background-image: url('../img/product/cover.png');
+    background-repeat: no-repeat;
+    -o-background-size: 100% 100%;
+       background-size: 100% 100%;
+    margin-top: 76px;
+}
+
+.product {
+    padding: 120px 0 0;
+}
+
+.product .top {
+    margin-bottom: 50px;
+    font-size: 0;
+}
+
+.product .top img {
+    margin-left: 33.7vw;
+    margin-right: 27.4vw;
+    vertical-align: top;
+}
+
+.product .top .bread {
+    font-size: 18px;
+    color: #999;
+    border-bottom: none;
+}
+
+.product .nav {
+    display: inline-block;
+    margin-left: -webkit-calc(18.75vw - 92px);
+    margin-left: -moz-calc(18.75vw - 92px);
+    margin-left: calc(18.75vw - 92px);
+    margin-right: 92px;
+    vertical-align: top;
+}
+
+.product .plist {
+    display: none;
+    vertical-align: top;
+}
+
+.product .plist.active {
+    display: inline-block;
+}
+
+.product .plist .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.product .plist .row a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    width: 22.92vw;
+    min-width: 340px;
+    height: 46.11vh;
+    min-height: 380px;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    padding-bottom: 40px;
+}
+
+.product .plist .row a:active, .product .plist .row a:visited, .product .plist .row a:link {
+    color: #000;
+}
+
+.product .plist .row a > img {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 90%;
+}
+
+.product .plist .row a > div {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.product .plist .row a:first-child {
+    margin-right: 32px;
+}
+
+.product .nav > a {
+    display: block;
+    width: 196px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product .nav > a:active, .product .nav > a:visited, .product .nav > a:link {
+    color: #333;
+}
+
+.product .nav > a:not(.pbtn).active {
+    color: #5CB384;
+}
+
+.product .nav .pbtn {
+    color: #fff;
+    background-color: #5CB384;
+}
+
